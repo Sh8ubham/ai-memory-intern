@@ -206,15 +206,13 @@ The system can easily be upgraded to PostgreSQL/SQLite by:
 - Confidence decay over time
 - Pattern versioning and rollback
 
-## Video Demonstration
 
-[Link to video demonstration]
 
 ## Contact
 
 **Kumar Shubham**  
 Email: shubhuis14best@gmail.com 
-GitHub: 
+GitHub: https://github.com/Sh8ubham
 
 ---
 
