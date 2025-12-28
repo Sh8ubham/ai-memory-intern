@@ -1,0 +1,62 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-A-004",
+    "vendor": "Supplier GmbH",
+    "fields": {
+      "invoiceNumber": "INV-2024-003",
+      "invoiceDate": "26.01.2024",
+      "serviceDate": "2024-01-20",
+      "currency": "EUR",
+      "poNumber": "PO-A-051",
+      "netTotal": 500,
+      "taxRate": 0.19,
+      "taxTotal": 95,
+      "grossTotal": 595,
+      "lineItems": [
+        {
+          "sku": "WIDGET-002",
+          "description": "Widget Pro",
+          "qty": 20,
+          "unitPrice": 25
+        }
+      ]
+    },
+    "confidence": 0.63,
+    "rawText": "Rechnungsnr: INV-2024-003\nLeistungsdatum: 20.01.2024\nHinweis: erneute Zusendung\n..."
+  },
+  "proposedCorrections": [
+    "Set serviceDate from Leistungsdatum: 2024-01-20",
+    "Matched to PO: PO-A-051"
+  ],
+  "requiresHumanReview": true,
+  "reasoning": "Applied 2 correction(s). Issues: Low extraction confidence - possible duplicate or quality issue. Requires human review due to unresolved issues.",
+  "confidenceScore": 0.7000000000000001,
+  "memoryUpdates": [],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.026Z",
+      "details": "Found 2 patterns for Supplier GmbH"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.027Z",
+      "details": "1 patterns match rawText"
+    },
+    {
+      "step": "apply",
+      "timestamp": "2025-12-28T05:04:30.027Z",
+      "details": "Applied serviceDate correction"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.027Z",
+      "details": "Auto-matched single PO"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.027Z",
+      "details": "Applied 2 correction(s). Issues: Low extraction confidence - possible duplicate or quality issue. Requires human review due to unresolved issues."
+    }
+  ]
+}

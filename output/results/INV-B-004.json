@@ -1,0 +1,48 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-B-004",
+    "vendor": "Parts AG",
+    "fields": {
+      "invoiceNumber": "PA-7810",
+      "invoiceDate": "04-03-2024",
+      "currency": "EUR",
+      "poNumber": "PO-B-111",
+      "netTotal": 1000,
+      "taxRate": 0.19,
+      "taxTotal": 190,
+      "grossTotal": 1190,
+      "lineItems": [
+        {
+          "sku": "NUT-10",
+          "description": "Nuts",
+          "qty": 500,
+          "unitPrice": 2
+        }
+      ]
+    },
+    "confidence": 0.61,
+    "rawText": "Duplicate submission of PA-7810\n..."
+  },
+  "proposedCorrections": [],
+  "requiresHumanReview": true,
+  "reasoning": "Issues: Missing service date; Low extraction confidence - possible duplicate or quality issue. Requires human review due to unresolved issues.",
+  "confidenceScore": 0.4000000000000001,
+  "memoryUpdates": [],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.038Z",
+      "details": "Found 1 patterns for Parts AG"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.038Z",
+      "details": "0 patterns match rawText"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.038Z",
+      "details": "Issues: Missing service date; Low extraction confidence - possible duplicate or quality issue. Requires human review due to unresolved issues."
+    }
+  ]
+}

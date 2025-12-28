@@ -1,0 +1,48 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-C-004",
+    "vendor": "Freight & Co",
+    "fields": {
+      "invoiceNumber": "FC-1004",
+      "invoiceDate": "28.03.2024",
+      "currency": "EUR",
+      "poNumber": "PO-C-901",
+      "netTotal": 1020,
+      "taxRate": 0.19,
+      "taxTotal": 193.8,
+      "grossTotal": 1213.8,
+      "lineItems": [
+        {
+          "sku": null,
+          "description": "Transport charges",
+          "qty": 1,
+          "unitPrice": 1020
+        }
+      ]
+    },
+    "confidence": 0.58,
+    "rawText": "Invoice: FC-1004\nPO: PO-C-901\nNote: delivery confirmation pending\n..."
+  },
+  "proposedCorrections": [],
+  "requiresHumanReview": true,
+  "reasoning": "Issues: Missing service date; Low extraction confidence - possible duplicate or quality issue. Requires human review due to unresolved issues.",
+  "confidenceScore": 0.4000000000000001,
+  "memoryUpdates": [],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.050Z",
+      "details": "Found 2 patterns for Freight & Co"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.050Z",
+      "details": "0 patterns match rawText"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.050Z",
+      "details": "Issues: Missing service date; Low extraction confidence - possible duplicate or quality issue. Requires human review due to unresolved issues."
+    }
+  ]
+}

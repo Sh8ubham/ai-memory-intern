@@ -1,0 +1,60 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-C-002",
+    "vendor": "Freight & Co",
+    "fields": {
+      "invoiceNumber": "FC-1002",
+      "invoiceDate": "10.03.2024",
+      "currency": "EUR",
+      "poNumber": "PO-C-900",
+      "netTotal": 1000,
+      "taxRate": 0.19,
+      "taxTotal": 190,
+      "grossTotal": 1190,
+      "lineItems": [
+        {
+          "sku": null,
+          "description": "Seefracht / Shipping",
+          "qty": 1,
+          "unitPrice": 1000
+        }
+      ]
+    },
+    "confidence": 0.73,
+    "rawText": "Invoice: FC-1002\nPO: PO-C-900\nService: Seefracht\n..."
+  },
+  "proposedCorrections": [],
+  "requiresHumanReview": true,
+  "reasoning": "Issues: Missing service date. Requires human review due to unresolved issues.",
+  "confidenceScore": 0.6000000000000001,
+  "memoryUpdates": [
+    "Learned: Map transport descriptions to FREIGHT SKU"
+  ],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.044Z",
+      "details": "Found 1 patterns for Freight & Co"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.044Z",
+      "details": "0 patterns match rawText"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.044Z",
+      "details": "Issues: Missing service date. Requires human review due to unresolved issues."
+    },
+    {
+      "step": "learn",
+      "timestamp": "2025-12-28T05:04:30.045Z",
+      "details": "Stored freight mapping pattern"
+    },
+    {
+      "step": "learn",
+      "timestamp": "2025-12-28T05:04:30.045Z",
+      "details": "Memory saved with 1 new patterns"
+    }
+  ]
+}

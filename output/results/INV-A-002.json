@@ -1,0 +1,56 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-A-002",
+    "vendor": "Supplier GmbH",
+    "fields": {
+      "invoiceNumber": "INV-2024-002",
+      "invoiceDate": "18.01.2024",
+      "serviceDate": "2024-01-15",
+      "currency": "EUR",
+      "poNumber": "PO-A-050",
+      "netTotal": 2375,
+      "taxRate": 0.19,
+      "taxTotal": 451.25,
+      "grossTotal": 2826.25,
+      "lineItems": [
+        {
+          "sku": "WIDGET-001",
+          "description": "Widget",
+          "qty": 95,
+          "unitPrice": 25
+        }
+      ]
+    },
+    "confidence": 0.72,
+    "rawText": "Rechnungsnr: INV-2024-002\nLeistungsdatum: 15.01.2024\nBestellnr: PO-A-050\nHinweis: Teillieferung\n..."
+  },
+  "proposedCorrections": [
+    "Set serviceDate from Leistungsdatum: 2024-01-15"
+  ],
+  "requiresHumanReview": false,
+  "reasoning": "Applied 1 correction(s). High confidence - auto-approved.",
+  "confidenceScore": 0.9,
+  "memoryUpdates": [],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.018Z",
+      "details": "Found 1 patterns for Supplier GmbH"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.018Z",
+      "details": "1 patterns match rawText"
+    },
+    {
+      "step": "apply",
+      "timestamp": "2025-12-28T05:04:30.019Z",
+      "details": "Applied serviceDate correction"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.019Z",
+      "details": "Applied 1 correction(s). High confidence - auto-approved."
+    }
+  ]
+}

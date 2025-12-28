@@ -1,0 +1,60 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-B-003",
+    "vendor": "Parts AG",
+    "fields": {
+      "invoiceNumber": "PA-7810",
+      "invoiceDate": "03-03-2024",
+      "currency": null,
+      "poNumber": "PO-B-111",
+      "netTotal": 1000,
+      "taxRate": 0.19,
+      "taxTotal": 190,
+      "grossTotal": 1190,
+      "lineItems": [
+        {
+          "sku": "NUT-10",
+          "description": "Nuts",
+          "qty": 500,
+          "unitPrice": 2
+        }
+      ]
+    },
+    "confidence": 0.66,
+    "rawText": "Invoice No: PA-7810\nPO: PO-B-111\nCurrency: EUR\n..."
+  },
+  "proposedCorrections": [],
+  "requiresHumanReview": true,
+  "reasoning": "Issues: Missing service date; Missing currency. Requires human review due to unresolved issues.",
+  "confidenceScore": 0.5000000000000001,
+  "memoryUpdates": [
+    "Learned: Extract currency from rawText for Parts AG"
+  ],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.034Z",
+      "details": "Found 0 patterns for Parts AG"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.034Z",
+      "details": "0 patterns match rawText"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.034Z",
+      "details": "Issues: Missing service date; Missing currency. Requires human review due to unresolved issues."
+    },
+    {
+      "step": "learn",
+      "timestamp": "2025-12-28T05:04:30.034Z",
+      "details": "Stored currency extraction pattern"
+    },
+    {
+      "step": "learn",
+      "timestamp": "2025-12-28T05:04:30.035Z",
+      "details": "Memory saved with 1 new patterns"
+    }
+  ]
+}

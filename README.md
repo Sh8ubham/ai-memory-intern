@@ -213,8 +213,8 @@ The system can easily be upgraded to PostgreSQL/SQLite by:
 ## Contact
 
 **Kumar Shubham**  
-Email: [Your email]  
-GitHub: [Your GitHub profile]
+Email: shubhuis14best@gmail.com 
+GitHub: 
 
 ---
 

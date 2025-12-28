@@ -1,0 +1,48 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-B-002",
+    "vendor": "Parts AG",
+    "fields": {
+      "invoiceNumber": "PA-7799",
+      "invoiceDate": "20-02-2024",
+      "currency": "EUR",
+      "poNumber": "PO-B-110",
+      "netTotal": 1500,
+      "taxRate": 0.19,
+      "taxTotal": 285,
+      "grossTotal": 1785,
+      "lineItems": [
+        {
+          "sku": "BOLT-99",
+          "description": "Bolts",
+          "qty": 150,
+          "unitPrice": 10
+        }
+      ]
+    },
+    "confidence": 0.86,
+    "rawText": "Invoice No: PA-7799\nPO: PO-B-110\nMwSt. inkl.\n..."
+  },
+  "proposedCorrections": [],
+  "requiresHumanReview": true,
+  "reasoning": "Issues: Missing service date; Qty mismatch: Invoice=150, Delivered=200. Requires human review due to unresolved issues.",
+  "confidenceScore": 0.4000000000000001,
+  "memoryUpdates": [],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.032Z",
+      "details": "Found 0 patterns for Parts AG"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.032Z",
+      "details": "0 patterns match rawText"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.032Z",
+      "details": "Issues: Missing service date; Qty mismatch: Invoice=150, Delivered=200. Requires human review due to unresolved issues."
+    }
+  ]
+}

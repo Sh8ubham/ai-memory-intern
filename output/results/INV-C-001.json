@@ -1,0 +1,60 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-C-001",
+    "vendor": "Freight & Co",
+    "fields": {
+      "invoiceNumber": "FC-1001",
+      "invoiceDate": "01.03.2024",
+      "currency": "EUR",
+      "poNumber": "PO-C-900",
+      "netTotal": 1000,
+      "taxRate": 0.19,
+      "taxTotal": 190,
+      "grossTotal": 1190,
+      "lineItems": [
+        {
+          "sku": null,
+          "description": "Transport charges",
+          "qty": 1,
+          "unitPrice": 1000
+        }
+      ]
+    },
+    "confidence": 0.79,
+    "rawText": "Invoice: FC-1001\nPO: PO-C-900\n2% Skonto if paid within 10 days\n..."
+  },
+  "proposedCorrections": [],
+  "requiresHumanReview": true,
+  "reasoning": "Issues: Missing service date. Requires human review due to unresolved issues.",
+  "confidenceScore": 0.6000000000000001,
+  "memoryUpdates": [
+    "Learned: Capture Skonto terms for Freight & Co"
+  ],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.041Z",
+      "details": "Found 0 patterns for Freight & Co"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.041Z",
+      "details": "0 patterns match rawText"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.041Z",
+      "details": "Issues: Missing service date. Requires human review due to unresolved issues."
+    },
+    {
+      "step": "learn",
+      "timestamp": "2025-12-28T05:04:30.041Z",
+      "details": "Stored Skonto pattern"
+    },
+    {
+      "step": "learn",
+      "timestamp": "2025-12-28T05:04:30.042Z",
+      "details": "Memory saved with 1 new patterns"
+    }
+  ]
+}

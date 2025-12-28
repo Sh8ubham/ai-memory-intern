@@ -1,0 +1,68 @@
+{
+  "normalizedInvoice": {
+    "invoiceId": "INV-A-001",
+    "vendor": "Supplier GmbH",
+    "fields": {
+      "invoiceNumber": "INV-2024-001",
+      "invoiceDate": "12.01.2024",
+      "serviceDate": "2024-01-01",
+      "currency": "EUR",
+      "poNumber": "PO-A-050",
+      "netTotal": 2500,
+      "taxRate": 0.19,
+      "taxTotal": 475,
+      "grossTotal": 2975,
+      "lineItems": [
+        {
+          "sku": "WIDGET-001",
+          "description": "Widget",
+          "qty": 100,
+          "unitPrice": 25
+        }
+      ]
+    },
+    "confidence": 0.78,
+    "rawText": "Rechnungsnr: INV-2024-001\nLeistungsdatum: 01.01.2024\nBestellnr: PO-A-050\n..."
+  },
+  "proposedCorrections": [
+    "Set serviceDate from Leistungsdatum: 2024-01-01"
+  ],
+  "requiresHumanReview": true,
+  "reasoning": "Applied 1 correction(s). Issues: Qty mismatch: Invoice=100, Delivered=95. Requires human review due to unresolved issues.",
+  "confidenceScore": 0.7000000000000001,
+  "memoryUpdates": [
+    "Learned: Supplier GmbH uses 'Leistungsdatum' for service date"
+  ],
+  "auditTrail": [
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.011Z",
+      "details": "Found 1 patterns for Supplier GmbH"
+    },
+    {
+      "step": "recall",
+      "timestamp": "2025-12-28T05:04:30.012Z",
+      "details": "1 patterns match rawText"
+    },
+    {
+      "step": "apply",
+      "timestamp": "2025-12-28T05:04:30.012Z",
+      "details": "Applied serviceDate correction"
+    },
+    {
+      "step": "decide",
+      "timestamp": "2025-12-28T05:04:30.013Z",
+      "details": "Applied 1 correction(s). Issues: Qty mismatch: Invoice=100, Delivered=95. Requires human review due to unresolved issues."
+    },
+    {
+      "step": "learn",
+      "timestamp": "2025-12-28T05:04:30.014Z",
+      "details": "Stored vendor pattern: Leistungsdatum"
+    },
+    {
+      "step": "learn",
+      "timestamp": "2025-12-28T05:04:30.014Z",
+      "details": "Memory saved with 1 new patterns"
+    }
+  ]
+}
